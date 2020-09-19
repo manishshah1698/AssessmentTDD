@@ -19,4 +19,11 @@ public class FizzBuzz {
 		else
 			return null;
 	}
+
+	public String fizzBuzzDivisibleBy15(int i) {
+		if(i % 15 == 0)
+			return "FizzBuzz";
+		else
+			return null;
+	}
 }

@@ -21,7 +21,6 @@ class fizzBuzzTest {
 	FizzBuzz fb = new FizzBuzz();
 	String result = fb.fizzBuzzDivisibleBy3(6);
 	assertEquals("Fizz",result);
-	
 	}
 
 	// Printing buzz for every multiple of 5.
@@ -30,6 +29,13 @@ class fizzBuzzTest {
 		FizzBuzz fb = new FizzBuzz();
 		String result = fb.fizzBuzzDivisibleBy5(10);
 		assertEquals("Buzz",result);
+		}
 		
+		// Printing fizzbuzz for every multiple of 3 and 5.
+		@Test
+		public void testforDivisibleBy15() {
+		FizzBuzz fb = new FizzBuzz();
+		String result = fb.fizzBuzzDivisibleBy15(30);
+		assertEquals("FizzBuzz",result);	
 		}
 }
