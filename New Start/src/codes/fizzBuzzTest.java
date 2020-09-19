@@ -15,11 +15,11 @@ class fizzBuzzTest {
 	}
 		
 	// Printing fizz for every multiple of 3.
-	@Test
-	public void testforDivisibleBy3() {
-	FizzBuzz fb = new FizzBuzz();
-	String result = fb.fiz(6);
-	assertEquals("Fizz",result);
+		@Test
+		public void testforDivisibleBy3() {
+		FizzBuzz fb = new FizzBuzz();
+		String result = fb.fiz(6);
+		assertEquals("Fizz",result);
 	}
 
 	// Printing buzz for every multiple of 5.
@@ -28,6 +28,15 @@ class fizzBuzzTest {
 		FizzBuzz fb = new FizzBuzz();
 		String result = fb.fiz(10);
 		assertEquals("Buzz",result);	
+		
 	}
+
+	// Printing number if not any of the above.
+		@Test
+		public void testforNotAny() {
+		FizzBuzz fb = new FizzBuzz();
+		String result = fb.fiz(19);
+		assertEquals("19",result);	
+		}
 
 }
