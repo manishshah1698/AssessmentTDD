@@ -12,4 +12,11 @@ public class FizzBuzz {
 		else
 			return null;
 	}
+
+	public String fizzBuzzDivisibleBy5(int i) {
+		if(i % 5 == 0)
+			return "Buzz";
+		else
+			return null;
+	}
 }

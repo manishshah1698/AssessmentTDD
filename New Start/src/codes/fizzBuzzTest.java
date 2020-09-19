@@ -24,4 +24,12 @@ class fizzBuzzTest {
 	
 	}
 
+	// Printing buzz for every multiple of 5.
+		@Test
+		public void testforDivisibleBy5() {
+		FizzBuzz fb = new FizzBuzz();
+		String result = fb.fizzBuzzDivisibleBy5(10);
+		assertEquals("Buzz",result);
+		
+		}
 }
