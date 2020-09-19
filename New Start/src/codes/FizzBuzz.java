@@ -5,9 +5,9 @@ public class FizzBuzz {
 	public String fiz(int i) {
 		if(i%15==0)
 			return "FizzBuzz";
-		if(i%3==0)
+		if(i%3==0 || i %10 ==3 || i/10 == 3)
 			return "Fizz";
-		if(i%5==0)
+		if(i%5==0 || i %10 ==5 || i/10 == 5)
 			return "Buzz";
 		else
 			return String.valueOf(i);
